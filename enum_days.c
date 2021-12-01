@@ -139,14 +139,48 @@ here I was testing different dates to make sure
 everything works as expected
 */
 int main() {
-    struct date today; 
+    struct date today;
+
+    today.m = jan;
+    today.d = 1;
+    printf("\n");
+    printdate(today);
+    printf("\n");
+    printdate(next_day(today));
+    printf("\n");
+
+    today.m = feb;
+    today.d = 28;
+    printf("\n");
+    printdate(today);
+    printf("\n");
+    printdate(next_day(today));
+    printf("\n");
+
+    today.m = mar;
+    today.d = 14;
+    printf("\n");
+    printdate(today);
+    printf("\n");
+    printdate(next_day(today));
+    printf("\n");
+
+    today.m = oct;
+    today.d = 31;
+    printf("\n");
+    printdate(today);
+    printf("\n");
+    printdate(next_day(today));
+    printf("\n");
+
     today.m = dec;
     today.d = 31;
     printf("\n");
     printdate(today);
-    printf("\n\n");
+    printf("\n");
     printdate(next_day(today));
     printf("\n\n");
 
+    // end of the program
     return 0;
 }
